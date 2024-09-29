@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #f0e2c5;
+  color: #49281a;
+}
+
+/* header section */
+header {
+  /* border: 2px solid #000; */
+  text-align: center;
+  padding: 10px;
+}
+
+header h1 {
+  font-family: "Playfair Display SC", serif;
+  font-size: 3rem;
+  padding: 20px 0;
+  font-weight: 700px;
+  font-style: normal;
+}
+
+header p {
+  font-family: "Lato", sans-serif;
+  margin-bottom: 40px;
+  font-size: 1.2em;
+}
+
+header a {
+  background-color: #49281a;
+  color: #f0e2c5;
+  padding: 20px 40px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* nav section */
+nav {
+  width: 90%;
+  margin: 20px auto;
+  text-align: center;
+  padding: 20px 0;
+  font-family: "Lato", sans-serif;
+}
+
+nav ul li {
+  display: inline-block;
+  border: 1px solid #000;
+  padding: 10px 20px;
+  margin-right: 10px;
+  border-radius: 5px;
+  transition: 1s;
+}
+
+nav ul li:hover {
+  box-shadow: 2px 2px 2px 2px #49281a;
+}
+nav ul li a {
+  color: #49281a;
+  text-decoration: none;
+}
+
+/* our-menu-section */
+#our-menu,
+#about-us,
+#contact-us {
+  width: 90%;
+  margin: 20px auto;
+}
+#our-menu h2,
+#about-us h2,
+#contact-us h2 {
+  font-family: "Playfair Display SC", serif;
+  font-size: 2rem;
+  padding: 20px 0;
+  font-weight: 700px;
+  font-style: normal;
+}
+
+/* coffee-section */
+
+#our-menu .card {
+  width: 250px;
+  padding: 10px;
+  border-radius: 15px;
+  text-align: center;
+  background-color: #49281a;
+  color: #f0e2c5;
+  display: inline-block;
+  margin: center;
+  border: 1px solid #000;
+}
+#our-menu .card .card-img-top {
+  width: 100%;
+  border-radius: 15px;
+}
+#our-menu .card h4 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+#our-menu .card .btn-card {
+  width: 100%;
+}
+#our-menu a {
+  color: #f0e2c5;
+  text-decoration: underline;
+}
+
+#our-menu .menu h3 {
+  margin: 20px auto;
+}
+
+/* #about-us section */
+#about-us p,
+#contact-us p,
+#footer p {
+  font-family: "Lato", sans-serif;
+  text-align: justify;
+  line-height: 1.5;
+  padding: 10px 0;
+}
+
+/* #contact-us section */
+
+div {
+  padding: 15px 0;
+}
+
+label {
+  display: inline-block;
+  width: 120px;
+  text-align: left;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 250px;
+  padding: 15px 0;
+  border-radius: 8px;
+  border: 1px solid #000;
+}
+
+#message {
+  display: flex;
+  align-items: normal;
+}
+
+.btn {
+  font-family: lato;
+  background-color: #49281a;
+  display: block;
+  width: 180px;
+  height: 40px;
+  line-height: 40px;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 8px;
+  margin: 10px auto;
+}
+
+/* footer section */
+footer p {
+  text-align: center;
+  font-size: 1rem;
+}
