@@ -5,8 +5,15 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  background-color: #f0e2c5;
+  /* background-color: #f0e2c5; */
+  background-color: #a56c47;
+  /* background-color: #febd85; */
   color: #49281a;
 }
 
@@ -14,7 +21,13 @@ body {
 header {
   /* border: 2px solid #000; */
   text-align: center;
-  padding: 10px;
+  padding: 19px;
+  background: url(img/bg.jpg), url(img/bg1.jpg),
+    linear-gradient(to right, #b2734a, #febd85);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 20%, 85%;
+  border-bottom: 2px solid black;
 }
 
 header h1 {
@@ -55,14 +68,20 @@ nav ul li {
   margin-right: 10px;
   border-radius: 5px;
   transition: 1s;
+  background-color: #49281a;
 }
 
 nav ul li:hover {
   box-shadow: 2px 2px 2px 2px #49281a;
 }
 nav ul li a {
-  color: #49281a;
+  color: #f0e2c5;
   text-decoration: none;
+}
+
+#our-menu .menu {
+  /* border: 1px solid #000; */
+  text-align: center;
 }
 
 /* our-menu-section */
@@ -87,32 +106,37 @@ nav ul li a {
 #our-menu .card {
   width: 250px;
   padding: 10px;
-  border-radius: 15px;
+  border-radius: 10px;
   text-align: center;
   background-color: #49281a;
   color: #f0e2c5;
   display: inline-block;
   margin: center;
   border: 1px solid #000;
+  font-family: "Lato", sans-serif;
+  line-height: 1.5em;
 }
 #our-menu .card .card-img-top {
   width: 100%;
-  border-radius: 15px;
+  border-radius: 10px;
 }
 #our-menu .card h4 {
   margin-top: 10px;
   margin-bottom: 10px;
+  font-family: "Lato", sans-serif;
 }
-#our-menu .card .btn-card {
-  width: 100%;
-}
+
 #our-menu a {
+  /* color: #49281a; */
   color: #f0e2c5;
   text-decoration: underline;
 }
 
 #our-menu .menu h3 {
+  font-family: "Lato", sans-serif;
   margin: 20px auto;
+  text-align: left;
+  color: #49281a;
 }
 
 /* #about-us section */
@@ -144,6 +168,7 @@ textarea {
   padding: 15px 0;
   border-radius: 8px;
   border: 1px solid #000;
+  background-color: #a56c47;
 }
 
 #message {
@@ -153,15 +178,19 @@ textarea {
 
 .btn {
   font-family: lato;
-  background-color: #49281a;
+  /* background-color: #f0e2c5; */
   display: block;
-  width: 180px;
+  width: 100px;
   height: 40px;
   line-height: 40px;
-  text-decoration: none;
-  color: #fff;
-  border-radius: 8px;
+  border-radius: 5px;
   margin: 10px auto;
+}
+#contact-us .btn {
+  margin: 10px 145px;
+  background-color: #49281a;
+  color: #f0e2c5;
+  width: 180px;
 }
 
 /* footer section */

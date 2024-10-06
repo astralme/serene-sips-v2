@@ -3,18 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="order-form.css">
     <title>Order Form</title>
   </head>
   <body>
     <h1>Order Form</h1>
-    <form action="">
+    <form>
       <div>
         <label for="">Your Name</label>
-        <input type="User Name" name="" id="" placeholder="First Name" />
-        <input type="User Name" name="" id="" placeholder="Last Name" />
+        <input type="user-name" name="" id="" placeholder="First Name" />
+        <input type="user-name" name="" id="" placeholder="Last Name" />
       </div>
 
-      <div></div>
+      <div>
         <label for="">Email address</label>
         <input type="email" name="" id="" placeholder="" />
       </div>
@@ -24,8 +25,8 @@
         <input type="tel" name="" id="" placeholder="" />
 
       <div>
-        <label for="">Item <code></code></label>
-        <select name="" id="" placeholder="">
+        <label for="item">Item</label>
+        <select name="item" id="" placeholder="">
           <option value="">Coffee-1</option>
           <option value="">Coffee-2</option>
           <option value="">Coffee-3</option>
@@ -47,9 +48,6 @@
         <input type="radio" name="Payment" id="" />Credit
       </div>
 
-      
-      </div>
-
       <div>
         Additional Request
         <textarea
@@ -59,7 +57,7 @@
           cols="20"
           placeholder="Your Message"
         ></textarea>
-      
+
       <div>
         <input type="submit" value="Order" />
         <input type="reset" value="Reset" />

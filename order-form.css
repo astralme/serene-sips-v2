@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h1 {
+  background-color: #a56c47;
+  color: #49281a;
+  text-align: center;
+  padding: 30px;
+  background-image: url(img/order\ form.jpg), url(img/order\ form.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 20%, 85%;
+  font-size: 3rem;
+  font-family: sans-serif;
+}
+
+form {
+  font-family: "Lato", sans-serif;
+  text-align: justify;
+  line-height: 1.5;
+  padding: 10px 0;
+}
+
+label {
+  display: inline-block;
+  width: 180px;
+  text-align: left;
+}
+
+input[type="user-name"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  width: 250px;
+  padding: 15px;
+  border-radius: 8px;
+  background-color: #a56c47;
+  display: inline-block;
+  line-height: 1;
+}
+
+input[type="user-name"] {
+  display: inline-table;
+}
+
+form {
+  background-color: #a56c47;
+  color: #49281a;
+  font-family: "Lato", sans-serif;
+  border: 1px solid black;
+  padding: 80px;
+}
+
+::placeholder {
+  color: #49281a;
+  padding: 15px;
+  border-radius: 8px;
+  background-color: #a56c47;
+  line-height: 1;
+  font-family: "Lato", sans-serif;
+}
+
+input[type="submit"],
+input[type="reset"] {
+  width: 80px;
+  padding: 10px;
+  background-color: #a56c47;
+  line-height: 1;
+  border-radius: 8px;
+}
