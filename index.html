@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="img/Favicon.jpg" type="image/x-icon" />
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
     <link rel="stylesheet" href="style.css" />
     <title>Serene Sip</title>
   </head>
@@ -28,7 +28,9 @@
 
     <!-- our menu section  -->
     <section id="our-menu">
-      <h2>Our Menu</h2>
+      <div>
+        <h2>Our Menu</h2>
+      </div>
       <div class="menu">
         <h3>Coffee Selections</h3>
         <div class="card">
@@ -181,19 +183,24 @@
       </p>
       <form action="">
         <div>
-          <label for="">Your Name</label>
-          <input type="text" name="" id="" />
+          <label for="" class="form-label">Your Name</label>
+          <input class="form-control" type="text" name="" id="" />
         </div>
         <div>
-          <label for="">Your Email</label>
-          <input type="email" name="" id="" />
+          <label for="" class="form-label">Your Email</label>
+          <input class="form-control" type="email" name="" id="" />
         </div>
         <div>
-          <label for="">Your Message</label>
-          <textarea name="" id="Message" rows="5"></textarea>
+          <label for="" class="form-label">Your Message</label>
+          <textarea
+            class="form-control"
+            name=""
+            id="Message"
+            rows="5"
+          ></textarea>
         </div>
         <div>
-          <input class="btn" type="submit" value="Send Message" />
+          <input class="form-btn" type="submit" value="Send Message" />
         </div>
       </form>
     </section>
@@ -201,7 +208,7 @@
     <!-- Footer Section -->
     <footer>
       <p>copyright &COPY; 2024. All rights reserved.</p>
-      <a href="#header">&uarr;</a>
+      <a href="#header" id="to-top">&uarr;</a>
     </footer>
   </body>
 </html>

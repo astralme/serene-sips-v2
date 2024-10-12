@@ -11,23 +11,19 @@ html {
 }
 
 body {
-  /* background-color: #f0e2c5; */
-  background-color: #a56c47;
-  /* background-color: #febd85; */
-  color: #49281a;
+  background-color: #49281a;
+  color: bisque;
 }
 
 /* header section */
 header {
-  /* border: 2px solid #000; */
   text-align: center;
   padding: 19px;
-  background: url(img/bg.jpg), url(img/bg1.jpg),
-    linear-gradient(to right, #b2734a, #febd85);
+  background: url(img/bg1.png), url(img/bg2.png);
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: 20%, 85%;
-  border-bottom: 2px solid black;
+  background-position: 0%, 100%;
+  border-bottom: 2px solid bisque;
 }
 
 header h1 {
@@ -36,6 +32,7 @@ header h1 {
   padding: 20px 0;
   font-weight: 700px;
   font-style: normal;
+  color: bisque;
 }
 
 header p {
@@ -45,37 +42,45 @@ header p {
 }
 
 header a {
+  border: solid bisque;
   background-color: #49281a;
-  color: #f0e2c5;
-  padding: 20px 40px;
+  color: bisque;
+  font-family: "Lato", sans-serif;
+  padding: 15px 20px;
   text-decoration: none;
   border-radius: 5px;
 }
 
 /* nav section */
 nav {
+  /* border: 1px solid black; */
   width: 90%;
   margin: 20px auto;
   text-align: center;
   padding: 20px 0;
   font-family: "Lato", sans-serif;
+  position: sticky;
+  top: -10px;
+  transition: 2s;
 }
 
 nav ul li {
   display: inline-block;
-  border: 1px solid #000;
+  border: 1px solid bisque;
   padding: 10px 20px;
   margin-right: 10px;
   border-radius: 5px;
-  transition: 1s;
+  transition: 0.5s;
   background-color: #49281a;
 }
 
 nav ul li:hover {
-  box-shadow: 2px 2px 2px 2px #49281a;
+  box-shadow: 1px 1px 1px 1px bisque;
+  transform: scale(0.5);
 }
+
 nav ul li a {
-  color: #f0e2c5;
+  color: bisque;
   text-decoration: none;
 }
 
@@ -101,6 +106,13 @@ nav ul li a {
   font-style: normal;
 }
 
+#our-menu h2 {
+  background-image: url(img/coffee\ and\ cake.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 15%;
+}
+
 /* coffee-section */
 
 #our-menu .card {
@@ -108,13 +120,14 @@ nav ul li a {
   padding: 10px;
   border-radius: 10px;
   text-align: center;
-  background-color: #49281a;
-  color: #f0e2c5;
+  background-color: #432000;
+  color: bisque;
   display: inline-block;
   margin: center;
   border: 1px solid #000;
   font-family: "Lato", sans-serif;
   line-height: 1.5em;
+  line-height: 2em;
 }
 #our-menu .card .card-img-top {
   width: 100%;
@@ -128,15 +141,17 @@ nav ul li a {
 
 #our-menu a {
   /* color: #49281a; */
-  color: #f0e2c5;
-  text-decoration: underline;
+  background-color: #432000;
+  color: bisque;
+  border: 1px solid bisque;
+  text-decoration: none;
 }
 
 #our-menu .menu h3 {
   font-family: "Lato", sans-serif;
   margin: 20px auto;
   text-align: left;
-  color: #49281a;
+  color: bisque;
 }
 
 /* #about-us section */
@@ -151,50 +166,163 @@ nav ul li a {
 
 /* #contact-us section */
 
-div {
-  padding: 15px 0;
+form {
+  font-family: "Lato", sans-serif;
+  /* border: 1px solid black; */
+  width: 50%;
+  padding: 20px;
+  color: bisque;
 }
-
-label {
+form div {
+  /* border: 1px solid black; */
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.form-label {
+  width: 30%;
   display: inline-block;
-  width: 120px;
-  text-align: left;
+  text-align: center;
 }
 
-input[type="text"],
-input[type="email"],
-textarea {
-  width: 250px;
-  padding: 15px 0;
-  border-radius: 8px;
-  border: 1px solid #000;
-  background-color: #a56c47;
+.form-control {
+  width: 65%;
+  background-color: #49281a;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid bisque;
+  color: bisque;
 }
 
-#message {
-  display: flex;
-  align-items: normal;
+.form-btn {
+  width: 150px;
+  height: 40px;
+  background-color: #49281a;
+  color: bisque;
+  border: 1px solid bisque;
+  border-radius: 5px;
+  margin-left: 30%;
+  cursor: pointer;
 }
 
 .btn {
-  font-family: lato;
-  /* background-color: #f0e2c5; */
+  font-family: "Lato", sans-serif;
   display: block;
   width: 100px;
-  height: 40px;
   line-height: 40px;
   border-radius: 5px;
   margin: 10px auto;
-}
-#contact-us .btn {
-  margin: 10px 145px;
-  background-color: #49281a;
-  color: #f0e2c5;
-  width: 180px;
 }
 
 /* footer section */
 footer p {
   text-align: center;
   font-size: 1rem;
+}
+#to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  text-decoration: none;
+  color: bisque;
+  width: 50px;
+  height: 50px;
+  padding-top: 10px;
+  border: 5px solid bisque;
+  text-align: center;
+  border-radius: 100px;
+}
+
+@media screen and (max-width: 1024px) {
+  #our-menu h2 {
+    background-position: 25%;
+  }
+  #to-top {
+    border-radius: 5px;
+    border: 3px solid bisque;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    background-image: url(img/bg1.png);
+    background-size: auto;
+  }
+  header h1 {
+    color: white;
+  }
+  * {
+    color: white;
+  }
+  #our-menu a {
+    color: white;
+  }
+  nav ul li a {
+    color: white;
+  }
+
+  #our-menu h2 {
+    background-position: 30%;
+  }
+  h2 {
+    color: white;
+  }
+  #our-menu .menu h3 {
+    color: white;
+  }
+  .form-btn {
+    color: white;
+  }
+  header a {
+    color: white;
+  }
+  #to-top {
+    border-radius: 5px;
+    border: 3px solid bisque;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  nav {
+    /* border: 2px solid black; */
+    font-size: x-small;
+    position: sticky;
+    width: 50%;
+    text-align: center;
+    padding: 3px;
+  }
+
+  nav ul li:hover {
+    box-shadow: 1px 1px 1px 1px bisque;
+    transform: scale(1.5);
+  }
+
+  #our-menu h2 {
+    background-position: 70%;
+  }
+  #to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    text-decoration: none;
+    color: bisque;
+    width: 40px;
+    height: 40px;
+    padding-top: 10px;
+    border: 1px solid bisque;
+    text-align: center;
+    border-radius: 100px;
+    box-shadow: 0 3px 10px yellowgreen;
+  }
+  .btn {
+    font-size: x-small;
+    position: sticky;
+    width: 20%;
+    line-height: normal;
+    text-align: center;
+    padding: 3px;
+  }
+  .btn:hover {
+    transform: scale(1.8);
+    transition: 1s;
+  }
 }
